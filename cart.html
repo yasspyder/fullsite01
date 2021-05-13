@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="ru" content="Yaroslav Chelov">
+    <title>КОРЗИНА товаров</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Создаем шапку сайта -->
+    <div class="header">
+        <div class="container">
+            <div class="leftHeader">
+                <a href="index.html" target="_self"><img src="img/logo.png" alt="Логотип компании"></a>
+                <img class="searchIcon" src="img/search.png" alt="Поиск по сайту">
+            </div>
+
+            <div class="rightHeader">
+                <img class="headerBars" src="img/bars.png" alt="Кнопка меню">
+                <img class="userIcon" src="img/user.png" alt="Иконка пользователя">
+
+                <span class="cartIconWrap">
+                    <img class="cartIcon" src="img/cart.png" alt="Корзина с товаром">
+                    <span>5</span>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- Конец шапки сайта -->
+
+
+    <!-- Скрытое меню -->
+    <div class="brandDark hidden">
+        <div class="menu">
+            <img class="menuClose" src="img/close-icon.png" alt="">
+            <div class="menuTitle"><a href="catalog.html" target="_self">КАТАЛОГ ТОВАРОВ</a></div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    MAN
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">T-Shirts</a>
+            </div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    WOMAN
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Polos</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+            </div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    KIDS
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Polos</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Bags</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Конец скрытого меню -->
+
+
+    <div class="newArrivals">
+        <div class="container">
+            <h1>НОВЫЕ ПОСТУПЛЕНИЯ</h1>
+        </div>
+    </div>
+
+    <div class="container cart">
+        <div class="cartLeft">
+
+            <div class="cartUnit">
+                <div class="cartUnitInside">
+                    <img src="images/cart/cart1.jpg" alt="" class="cartImg">
+                    <div class="cartProduct">
+                        <div class="cartProductName">MANGO PEOPLE T-SHIRT</div>
+                        <div class="cartProductPrice">
+                            Price: <span>$300</span>
+                        </div>
+                        <div class="cartProductColor">Color: Red</div>
+                        <div class="cartProductSize">Size: Xl</div>
+                        <div class="cartProductQty">
+                            Quantity:
+                            <input type="text" value="2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartUnit">
+                <div class="cartUnitInside">
+                    <img src="images/cart/cart2.jpg" alt="" class="cartImg">
+                    <div class="cartProduct">
+                        <div class="cartProductName">MANGO PEOPLE T-SHIRT</div>
+                        <div class="cartProductPrice">
+                            Price: <span>$300</span>
+                        </div>
+                        <div class="cartProductColor">Color: Red</div>
+                        <div class="cartProductSize">Size: Xl</div>
+                        <div class="cartProductQty">
+                            Quantity:
+                            <input type="text" value="2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartLeftButtons">
+                <button>Clear shopping cart</button>
+                <button>Continue shopping</button>
+            </div>
+
+        </div>
+        <div class="cartRight">
+            <form action="action_page2.php" class="cartRightForm">
+                <div class="cartRightHeader">SHIPPING ADRESS</div>
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button>GET A QUOTE</button>
+            </form>
+
+            <div class="cartTotal">
+                <div class="cartSubtotal">
+                    SUB TOTAL <span>$900</span>
+                </div>
+                <div class="cartGrandtotal">
+                    GRAND TOTAL <span>$900</span>
+                </div>
+                <hr>
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="subscribe">
+        <div class="container">
+
+            <div class="subscribeLeft">
+                <img src="img/subscribeUser.png" alt="">
+                <div class="subscribeUserText">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+            </div>
+
+            <div class="subscribeRight">
+                <div class="subscribeTitle">
+                    SUBSCRIBE
+                </div>
+                <div class="subscribeText">
+                    FOR OUR NEWLETTER AND PROMOTION
+                </div>
+                <form action="action_page3.php" class="subscribeForm">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--
+    <script type="text/javascript">
+        function CreateImage() {
+            var cnvs = document.getElementById("canvas");
+            var ctxt = cnvs.getContext("2d");
+            var x = 1;
+            function animation2() {
+                ctxt.fillStyle = "blue";
+                ctxt.fillRect(x * 10, (Math.sin(x)) * 50 + 75, 2.5, 2.5);
+                ctxt.fillStyle = "red";
+                ctxt.fillRect(x * 10, (Math.cos(x)) * 50 + 75, 2.5, 2.5);
+                x = x + 0.01;
+                if (x > 60) {
+                    x = 1;
+                    ctxt2.clearRect(0, 0, 640, 150);
+                }
+                setTimeout(animation, 10);
+            }
+            animation();
+        }
+    </script>
+    -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footerLeft">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerRight">
+                &copy; 2021 Brand All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    <!-- Появление меню и смена класса при нажатии на кнопку меню bars.png -->
+    <script src="script.js"></script>
+    <!-- Появление меню фильтров -->
+    <script src="app.js"></script>
+</body>
+
+</html>
