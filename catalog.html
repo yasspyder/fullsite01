@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="ru" content="Yaroslav Chelov">
+    <title>Каталог продукции</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Создаем шапку сайта -->
+    <div class="header">
+        <div class="container">
+            <div class="leftHeader">
+                <a href="index.html" target="_self"><img src="img/logo.png" alt="Логотип компании"></a>
+                <img class="searchIcon" src="img/search.png" alt="Поиск по сайту">
+            </div>
+
+            <div class="rightHeader">
+                <img class="headerBars" src="img/bars.png" alt="Кнопка меню">
+                <img class="userIcon" src="img/user.png" alt="Иконка пользователя">
+
+                <span class="cartIconWrap">
+                    <img class="cartIcon" src="img/cart.png" alt="Корзина с товаром">
+                    <span>5</span>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- Конец шапки сайта -->
+
+
+    <!-- Скрытое меню -->
+    <div class="brandDark hidden">
+        <div class="menu">
+            <img class="menuClose" src="img/close-icon.png" alt="">
+            <div class="menuTitle"><a href="catalog.html" target="_self">КАТАЛОГ ТОВАРОВ</a></div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    MAN
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">T-Shirts</a>
+            </div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    WOMAN
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Polos</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+            </div>
+
+            <div class="menuUnit">
+                <div class="menuHeader">
+                    KIDS
+                </div>
+                <a href="#">Accessories</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Polos</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Shirts</a>
+                <a href="#">Bags</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Конец скрытого меню -->
+
+
+    <div class="newArrivals">
+        <div class="container">
+            <h1>НОВЫЕ ПОСТУПЛЕНИЯ</h1>
+            <nav>
+                <a href="index.html">ГЛАВНАЯ</a>
+                <span>/</span>
+                <a href="#">МУЖЧИНЫ</a>
+                <span>/</span>
+                <a href="#">НОВЫЕ ПОСТУПЛЕНИЯ</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div class="container">
+            <div class="filtersLeft">
+                <span class="filterLabel">FILTER</span>
+                <img class="filterIcon" src="img/filter.svg" alt=":::.">
+                <div class="filterPopup hidden">
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">CATEGORY</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">BRAND</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                    <nav class="filterCategory">
+                        <div class="filterCategoryHeader">DESIGNER</div>
+                        <div class="hidden">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="filtersRight">
+                <div class="filterTrending">
+                    TRENDING NOW
+                    <img src="img/filterArrow.svg" alt="">
+                </div>
+                <div class="filterSize">
+                    <div class="filterSizeWrap">
+                        SIZE
+                        <img src="img/filterArrow.svg" alt="">
+                    </div>
+                    <div class="filterSizes hidden">
+                        <div>
+                            <input type="checkbox"> XS
+                        </div>
+                        <div>
+                            <input type="checkbox"> S
+                        </div>
+                        <div>
+                            <input type="checkbox"> M
+                        </div>
+                        <div>
+                            <input type="checkbox"> L
+                        </div>
+                    </div>
+                </div>
+                <div class="filterPrice">
+                    PRICE
+                    <img src="img/filterArrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured container">
+        <h2 class="featuredHeader">Рекомендуемые товары</h2>
+        <div class="featuredTitle">витрина товаров по рекомендуемым позициям на этой неделе</div>
+
+        <div class="featuredItems">
+
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/1.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/2.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/3.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/4.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/5.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+            <div class="featuredItem">
+
+                <div class="featuredImgWrap">
+                    <img src="img/featured/6.jpg" alt="">
+                    <div class="featuredImgDark">
+                        <button>
+                            <img src="img/cart.svg" alt="">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="featuredData">
+                    <div class="featuredName">
+                        ELLERY X M'O CAPSULE
+                    </div>
+                    <div class="featuredText">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                        teams
+                        up with Moda Operandi.
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">
+                <img src="img/chevronLeft.svg" alt="">
+            </a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6.....20</a>
+            <a href="#">
+                <img src="img/chevronRight.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="container">
+
+            <div class="serivceUnit">
+                <img src="img/services/delivery.svg" alt="">
+                <div class="servicesTitle">
+                    Free Delivery
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="img/services/discount.svg" alt="">
+                <div class="servicesTitle">
+                    Sales & discounts
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+
+            <div class="serivceUnit">
+                <img src="img/services/assurance.svg" alt="">
+                <div class="servicesTitle">
+                    Quality assurance
+                </div>
+                <div class="servicesText">
+                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="container">
+
+            <div class="subscribeLeft">
+                <img src="img/subscribeUser.png" alt="">
+                <div class="subscribeUserText">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </div>
+            </div>
+
+            <div class="subscribeRight">
+                <div class="subscribeTitle">
+                    SUBSCRIBE
+                </div>
+                <div class="subscribeText">
+                    FOR OUR NEWLETTER AND PROMOTION
+                </div>
+                <form action="action_page4.php" class="subscribeForm">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footerLeft">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footerRight">
+                &copy; 2021 Brand All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    <!-- Появление меню и смена класса при нажатии на кнопку меню bars.png -->
+    <script src="script.js"></script>
+    <!-- Появление меню фильтров -->
+    <script src="app.js"></script>
+</body>
+
+</html>
